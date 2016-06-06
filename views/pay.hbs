@@ -1,0 +1,17 @@
+<div id="container">
+  <form action="/pay" method="POST">
+    <input name="amount" type="hidden" value="{{amount}}">
+    <input name="product_title" type="hidden" value="{{product_title}}">
+    <h1>{{org_name}} Auction</h1>
+    <p class="description">Congratulations! Click below to pay for your item.</p>
+    <script
+     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+     data-key="{{stripe_api_key}}"
+     data-amount="{{amount}}"
+     data-name="{{product_title}}"
+     data-description="{{org_name}} Auction Item"
+     data-image="/images/logo.png"
+     data-locale="auto">
+    </script>
+  </form>
+</div>

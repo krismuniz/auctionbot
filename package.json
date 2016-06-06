@@ -1,0 +1,28 @@
+{
+  "name": "auction-bot",
+  "version": "0.1.0",
+  "description": "A Facebook Messenger bot that handles auctions.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "run:local": "lt --port 8080 --subdomain auctionbot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bot",
+    "auction",
+    "botkit"
+  ],
+  "author": "Kristian Muñiz <kristian.muniz@upr.edu> (http://www.krismuniz.com)",
+  "license": "MIT",
+  "dependencies": {
+    "botkit": "^0.2.0",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4",
+    "hbs": "^4.0.0",
+    "morgan": "^1.7.0",
+    "request": "^2.72.0",
+    "stripe": "^4.7.0"
+  }
+}
