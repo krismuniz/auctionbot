@@ -8,6 +8,9 @@
     "run:local": "lt --port 8080 --subdomain auctionbot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": "6.2.0"
+  },
   "keywords": [
     "bot",
     "auction",
